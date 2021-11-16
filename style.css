@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: color #f6f6f2;
+  height: 100%;
+  font-family: "Zen Kurenaido", sans-serif;
+  overflow-x: hidden;
+}
+
+#header {
+}
+
+#main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+nav {
+  width: 40%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul a:hover,
+nav ul a.active {
+  font-size: 20px;
+  font-weight: 600;
+  color: #388087;
+}
+
+#header-text {
+  text-align: center;
+}
+
+#header-text h1,
+#services h1 {
+  font-size: 50px;
+  font-family: "Ubuntu", sans-serif;
+  color: #388087;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+#header-text p,
+.services-header p {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+#header-text button,
+form button {
+  background-color: #6fb3b8;
+  padding: 20px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2),
+    0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#container {
+  margin-top: 50px;
+}
+
+.profile-image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-intro {
+  background-color: #388087;
+  color: white;
+  margin: 100px 0;
+  padding: 30px 100px;
+  text-align: center;
+}
+
+.profile-intro div ~ p {
+  font-size: 30px;
+}
+
+.profile-intro div {
+  border-radius: 50px;
+  border: 4px solid white;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.profile-intro i {
+  font-size: 50px;
+  padding: 20px;
+}
+
+#services,
+#projects {
+  background-color: white;
+  padding: 20px 0;
+}
+.services-body,
+.projects-body {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 80%;
+  margin: 50px auto;
+  grid-gap: 50px;
+}
+
+.services-body img {
+  height: 500px;
+  border-radius: 10px;
+}
+.projects-body img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.services-body div,
+.projects-body div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.services-body div p,
+.projects-body div p {
+  font-size: 25px;
+}
+
+.services-header {
+  text-align: center;
+}
+
+#footer {
+  background-color: #388087;
+  color: white;
+  padding: 20px 0;
+  position: absolute;
+  width: 100vw;
+}
+
+.social ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social ul li {
+  font-size: 50px;
+  color: lightgrey;
+}
+
+.name {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.copyright {
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+  color: lightgrey;
+}
+
+.copyright div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright > div + p {
+  margin-top: -10px;
+}
+
+.copyright i {
+  padding: 10px;
+}
+
+#banner {
+  height: calc(100vh - 85px);
+  display: flex;
+  background-color: #388087;
+}
+
+#banner div {
+  width: 50%;
+}
+
+#banner div.background {
+  background: url("images/contact.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.banner-text {
+  display: flex;
+  height: 100%;
+  text-align: center;
+  color: white;
+  align-items: center;
+  font-size: 50px;
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 20px;
+}
+
+#form,
+#table {
+  width: 50%;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2),
+    0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  background-color: #f6f6f2;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+}
+
+input {
+  height: 50px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+form h1 {
+  margin-bottom: 0;
+  font-size: 35px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+form p {
+  margin: 0 0 50px;
+}
+
+form button {
+  width: 100px;
+}
+
+#contact {
+  display: flex;
+  background-color: white;
+  padding: 100px 0;
+}
+
+table {
+  font-family: "Lato", sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+td,
+th {
+  border: 1px solid #badfe7;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #badfe7;
+}
+
+#table {
+  display: flex;
+  align-items: center;
+}
+
+.projects-background {
+  background: url("images/projects.jpg") no-repeat center;
+  background-size: cover;
+}
